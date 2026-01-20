@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVGen - Student CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="WhatsApp_Image_2026-01-03_at_1.01.57_AM-removebg-preview.png" alt="CVGen Logo">
+                <span>CVGen</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#cv-form">CV Generator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <h1>Create Professional Student CVs</h1>
+                <p>Free, easy-to-use CV builder designed specifically for students and recent graduates.</p>
+                <a href="#cv-form" class="btn">Start Creating CV</a>
+            </div>
+            <div class="home-image">
+                <img src="WhatsApp Image 2026-01-17 at 1.14.15 PM.jpeg" alt="CV Creation">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Professional Templates</h3>
+                    <p>Choose from student-focused CV templates that highlight your education and skills.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Easy to Customize</h3>
+                    <p>Simple form-based interface to fill in your details quickly and easily.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Free Download</h3>
+                    <p>Download your CV as PDF or print directly. No registration required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Generator Section -->
+    <section id="cv-form" class="cv-section">
+        <div class="container">
+            <h2>CV Generator</h2>
+            <p class="section-subtitle">Fill in your details below to create your CV</p>
+
+            <div class="cv-container">
+                <div class="form-container">
+                    <h3>Your Information</h3>
+                    <form id="cvForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="education">Education</label>
+                            <textarea id="education" rows="4"
+                                placeholder="Enter your educational background"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">Skills</label>
+                            <textarea id="skills" rows="4" placeholder="List your skills"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Experience/Projects</label>
+                            <textarea id="experience" rows="4"
+                                placeholder="Describe your experience or projects"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Generate CV Preview</button>
+                    </form>
+                </div>
+
+                <div class="preview-container">
+                    <h3>CV Preview</h3>
+                    <div class="cv-preview">
+                        <div class="cv-header">
+                            <h3 id="preview-name">Your Name Here</h3>
+                            <p id="preview-email">Email: example@email.com</p>
+                            <p id="preview-phone">Phone: +1234567890</p>
+                        </div>
+
+                        <div class="cv-section">
+                            <h4>Education</h4>
+                            <p id="preview-education">Your educational background will appear here.</p>
+                        </div>
+
+                        <div class="cv-section">
+                            <h4>Skills</h4>
+                            <p id="preview-skills">Your skills will appear here.</p>
+                        </div>
+
+                        <div class="cv-section">
+                            <h4>Experience/Projects</h4>
+                            <p id="preview-experience">Your experience and projects will appear here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-envelope"></i> support@cvgen.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About CVGen</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>CVGen is a free platform that helps students create professional CVs without any design
+                        experience. Our templates are optimized for students with limited work experience.</p>
+                    <p>We focus on highlighting your education, skills, projects, and achievements in a way that appeals
+                        to employers and academic institutions.</p>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CVGen - Student CV Generator. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
